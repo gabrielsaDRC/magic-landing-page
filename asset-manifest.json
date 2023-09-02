@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/magic-landing-page/static/css/main.5136df95.css",
+    "main.js": "/magic-landing-page/static/js/main.408c96f1.js",
+    "static/js/787.08a4f1f2.chunk.js": "/magic-landing-page/static/js/787.08a4f1f2.chunk.js",
+    "static/media/background.png": "/magic-landing-page/static/media/background.fca19452a21f2accfc83.png",
+    "index.html": "/magic-landing-page/index.html",
+    "main.5136df95.css.map": "/magic-landing-page/static/css/main.5136df95.css.map",
+    "main.408c96f1.js.map": "/magic-landing-page/static/js/main.408c96f1.js.map",
+    "787.08a4f1f2.chunk.js.map": "/magic-landing-page/static/js/787.08a4f1f2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5136df95.css",
+    "static/js/main.408c96f1.js"
+  ]
+}
