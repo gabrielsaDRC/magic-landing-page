@@ -20,25 +20,25 @@ function EventImage() {
 
   return (
     <section className='banner-section'>
-      <Container className='banner-container'>
+      <div className='banner-container'>
         <div className='row align-banner'>
-          <Paper elevation={3} className="banners" style={{ background: 'black' }}>
+          <div elevation={3} className="banners" style={{ background: 'black' }}>
             <div style={{display: 'inline-grid'}}>
               <img className='banner-img' src={image1}></img>
             </div>
-          </Paper>
-          <Paper elevation={3} className="banners" style={{ background: 'black' }}>
+          </div>
+          <div elevation={3} className="banners" style={{ background: 'black' }}>
             <div style={{display: 'inline-grid'}}>
               <img className='banner-img' src={image2}></img>
             </div>
-          </Paper>
-          <Paper elevation={3} className="banners" style={{ background: '#f0ebf8' }}>
+          </div>
+          <div elevation={3} className="banners" style={{ background: '#f0ebf8' }}>
             <div style={{display: 'inline-grid'}}>
               <iframe className='responsive-iframe' src="https://docs.google.com/forms/d/e/1FAIpQLSfBsI3c49tEPeqq28WCLNEta-YwBD01QjGIYN03KVdU2g-HLQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
             </div>
-          </Paper>
+          </div>
         </div>
-        </Container>
+        </div>
     </section>
 
   );

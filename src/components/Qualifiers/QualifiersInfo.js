@@ -7,9 +7,9 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports'; // Substitua 
 
 function QualifiersInfo() {
   return (
-    <section className='Background'>
-      <Container>
-        <Paper elevation={3} className="informativo" style={{ padding: '20px', background: 'rgba(255, 255, 255, 0.7)' }}>
+    <section className='QualifiersInfo Background'>
+      <div>
+        <div elevation={3} className="informativo" style={{ padding: '20px', background: 'rgba(255, 255, 255, 0.7)' }}>
           <div className='info-divide'>
             <Typography variant="h5"><LocalPlayIcon fontSize="small" style={{ marginRight: '10px' }} />CCG Qualifiers</Typography>
             <Typography variant="body1" style={{ marginTop: '10px'}}>
@@ -28,8 +28,8 @@ function QualifiersInfo() {
             O vencedor de cada uma das etapas realziadas em lojas WPN, estará qualificado e poderá inscrever-se no torneio CCG showdown do ciclo correspondente à sua qualificação.
             </Typography>
           </div>
-        </Paper>
-      </Container>
+        </div>
+      </div>
     </section>
   );
 }

@@ -24,7 +24,6 @@
     padding-top: 20px;
     padding-bottom: 20px;
     display: grid;
-    max-width: 100% !important;
 }
 .responsive-iframe {
     height: 70vh;
@@ -35,11 +34,24 @@
 }
 
 @media only screen and (max-width: 768px) {
-
-    .carousel-image-container img {
-        object-fit: cover;
-        height: 60vh;
+    .banner-section {
+        display: block;
     }
 
+    .banner-img {
+        height: 400px;
+        width: 100%;
+        max-width: -webkit-fill-available;
+    }
+
+    .responsive-iframe {
+        height: 400px;
+        width: 100%;
+        max-width: -webkit-fill-available;
+    }
+
+    .banners #div {
+        display: block;
+    }
 }
   

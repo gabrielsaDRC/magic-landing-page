@@ -29,7 +29,7 @@ code {
   box-sizing: border-box;
 }
 
-html, body, #app, #app>div {
+html, body, #app, #app> div {
   height: 100%;
   width: 100%;
 }
@@ -50,6 +50,10 @@ html, body, #app, #app>div {
   width: 30%;
 }
 
+.QualifiersInfoMobile {
+  display: none;
+}
+
 .info-divide {
   padding: 20px;
 }
@@ -67,4 +71,30 @@ html, body, #app, #app>div {
 /* Estilo da trilha da barra de rolagem */
 ::-webkit-scrollbar-track {
   background-color: #f1f1f1; /* Cor da trilha da barra de rolagem */
+}
+
+@media only screen and (max-width: 768px) {
+
+  .Background{
+    height: 60vh;
+    min-height: 60vh;
+    width: 100%;
+    max-width: -webkit-fill-available;
+  }
+
+  .QualifiersInfoMobile {
+    display: block;
+    background-color: #042235;
+    color: white;
+    text-align: center;
+  }
+
+  .QualifiersInfo {
+    display: none;
+  }
+
+  .background_mobile {
+    max-width: 100%;
+  }
+  
 }
