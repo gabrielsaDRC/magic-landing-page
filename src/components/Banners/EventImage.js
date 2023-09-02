@@ -7,9 +7,6 @@ import image2 from './banner_card.jpeg'
 
 function EventImage() {
 
-  //Carousel 
-  const [currentSlide, setCurrentSlide] = useState(0);
-
   const images = [
     {
     src: image1,
@@ -21,39 +18,27 @@ function EventImage() {
     }
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentSlide((prevSlide) => (prevSlide === images.length - 1 ? 0 : prevSlide + 1));
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, [images]);
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === images.length - 1 ? 0 : prevSlide + 1));
-  };
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? images.length - 1 : prevSlide - 1));
-  };
-
-
   return (
     <section className='banner-section'>
       <Container className='banner-container'>
         <div className='row align-banner'>
-          <Paper elevation={3} className="banners" style={{ background: 'rgba(255, 255, 255, 0.7)' }}>
-            <div>
+          <Paper elevation={3} className="banners" style={{ background: 'black' }}>
+            <div style={{display: 'inline-grid'}}>
               <img className='banner-img' src={image1}></img>
             </div>
           </Paper>
-          <Paper elevation={3} className="banners" style={{ background: 'rgba(255, 255, 255, 0.7)' }}>
-            <div>
+          <Paper elevation={3} className="banners" style={{ background: 'black' }}>
+            <div style={{display: 'inline-grid'}}>
               <img className='banner-img' src={image2}></img>
             </div>
           </Paper>
+          <Paper elevation={3} className="banners" style={{ background: '#f0ebf8' }}>
+            <div style={{display: 'inline-grid'}}>
+              <iframe className='responsive-iframe' src="https://docs.google.com/forms/d/e/1FAIpQLSfBsI3c49tEPeqq28WCLNEta-YwBD01QjGIYN03KVdU2g-HLQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            </div>
+          </Paper>
         </div>
-      </Container>
+        </Container>
     </section>
 
   );
