@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-lg-4 {
+  width: 33.3333333333%;
+}
+
+.col-lg-6 {
+  width: 50%;
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+html, body, #app, #app>div {
+  height: 100%;
+  width: 100%;
+}
+
+.Background {
+  margin: 0;
+  padding: 0;
+  background-image: url('/public/images/background.png'); /* Substitua pelo caminho da sua imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.informativo {
+  position: absolute;
+  right: 0px; 
+  top: 50%; 
+  transform: translateY(-50%);
+  width: 30%;
+}
+
+.info-divide {
+  padding: 20px;
+}

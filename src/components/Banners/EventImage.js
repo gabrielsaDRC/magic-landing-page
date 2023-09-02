@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Container, Paper } from '@mui/material';
 import './EventImage.css';
 
+import image1 from './banner_info.png'
+import image2 from './banner_card.jpeg'
+
 function EventImage() {
 
   //Carousel 
@@ -9,11 +12,11 @@ function EventImage() {
 
   const images = [
     {
-    src: './images/banner_info.png',
+    src: image1,
     alt: 'Image 1',
     },
     {
-    src: './images/banner_card.jpeg',
+    src: image2,
     alt: 'Image 2',
     }
   ];
@@ -36,29 +39,22 @@ function EventImage() {
 
 
   return (
-    <Container>
-        <Paper elevation={3} className="banners" style={{ padding: '10px', background: 'rgba(255, 255, 255, 0.7)' }}>
-            
-        <div className="carousel">
-                <div className="carousel-container">
-                    <div className="carousel-image-container">
-                      {images.map((image, index) => (
-                      <img
-                          key={index}
-                          src={image.src}
-                          alt={image.alt}
-                          className={index === currentSlide ? 'active' : ''}
-                      />
-                      ))}
-                    </div>
-                </div>
-                {/*<div className="carousel-buttons">
-                    <button onClick={handlePrevSlide}><i className="fas fa-chevron-left"></i></button>
-                    <button onClick={handleNextSlide}><i className="fas fa-chevron-right"></i></button>
-                </div>*/}
+    <section className='banner-section'>
+      <Container className='banner-container'>
+        <div className='row align-banner'>
+          <Paper elevation={3} className="banners" style={{ background: 'rgba(255, 255, 255, 0.7)' }}>
+            <div>
+              <img className='banner-img' src={image1}></img>
             </div>
-        </Paper>
-    </Container>
+          </Paper>
+          <Paper elevation={3} className="banners" style={{ background: 'rgba(255, 255, 255, 0.7)' }}>
+            <div>
+              <img className='banner-img' src={image2}></img>
+            </div>
+          </Paper>
+        </div>
+      </Container>
+    </section>
 
   );
 }

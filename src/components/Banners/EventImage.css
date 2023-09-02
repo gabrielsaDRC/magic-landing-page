@@ -51,6 +51,34 @@
     color: white;
 }
 
+
+
+.banner-img {
+    height: 600px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.align-banner {
+    align-items: center;
+    justify-content: center;
+}
+
+.align-banner div {
+    margin: 10px;
+}
+
+.banner-section {
+    background-color: #103f5b;
+    border-top: 8px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 8px solid rgba(255, 255, 255, 0.7);
+}
+
+.banner-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 @media only screen and (max-width: 768px) {
 
     .carousel-image-container img {
